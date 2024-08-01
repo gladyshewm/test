@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b gh-pages -m 'Deploy user-table'",
+    "deploy": "gh-pages -d build -b gh-pages -m 'Deploy user-table' --dest user-table",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
