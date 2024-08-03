@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.email "m.gladyshew@yandex.ru"
           git config --global user.name "schenok"
-          git config --global url.https://${{ secrets.GITHUB_TOKEN }}@github.com/.insteadOf https://github.com/
+          git config --global url.https://${{ secrets.MY_PAT }}@github.com/.insteadOf https://github.com/
 
       - name: Deploy ${{ matrix.project }} to GitHub Pages
         run: |
