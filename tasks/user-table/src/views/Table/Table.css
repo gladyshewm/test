@@ -1,7 +1,6 @@
 :root {
   --table-main-color: #ff7300;
   --table-hover-color: #e56700;
-  --text-color: rgba(255, 255, 255, 0.8);
   --error-color: #fc7d6c;
 }
 
@@ -14,10 +13,11 @@
 
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate !important;
+  border-spacing: 0;
   margin-bottom: 10px;
-  border: 1px solid var(--table-main-color);
-  background: transparent;
+  border-radius: 6px;
+  background: var(--base-color-light);
   table-layout: fixed;
 }
 
@@ -30,6 +30,14 @@
   text-align: left;
   min-width: 50px;
   max-width: 250px;
+
+  &:nth-child(1) {
+    border-top-left-radius: 6px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 6px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -70,8 +78,16 @@
   border-bottom: 1px solid var(--table-main-color);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--base-color);
     cursor: pointer;
+  }
+
+  &:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+
+    &:hover {
+      background: var(--base-color);
+    }
   }
 }
 

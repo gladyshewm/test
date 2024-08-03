@@ -18,6 +18,7 @@
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   background-color: transparent;
+  transition: background-color 0.25s ease;
   color: var(--text-color);
   outline: none;
 
@@ -26,7 +27,9 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px rgba(255, 115, 0, 0.2);
+    /* box-shadow: 0 0 0 2px rgba(255, 115, 0, 0.2); */
+    background-color: var(--base-color-light);
+    transition: background-color 0.25s ease;
   }
 }
 
@@ -44,10 +47,5 @@
   &:hover {
     background-color: var(--table-hover-color);
     transition: background-color 0.25s ease;
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(255, 115, 0, 0.2);
   }
 }

@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root {
-  --base-color: #353535;
+  /* --base-color: #353535; */
+  --base-color: #171717;
+  --base-color-light: #212121;
+  --base-color-dark: #0d0d0d;
+  --text-color: #ececdf; 
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Merriweather';
+  font-family: 'Comfortaa';
 }

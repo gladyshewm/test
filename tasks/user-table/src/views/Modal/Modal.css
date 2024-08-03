@@ -13,9 +13,9 @@
 
 .modal-content {
   position: relative;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--text-color);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   max-width: 500px;
   width: 100%;
 
@@ -34,7 +34,7 @@
   right: 10px;
   padding: 5px 10px;
   background-color: var(--table-main-color);
-  color: white;
+  color: var(--text-color);
   border: none;
   border-radius: 50%;
   cursor: pointer;
