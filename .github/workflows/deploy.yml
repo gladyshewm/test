@@ -1,10 +1,5 @@
 name: Deploy to GitHub Pages
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 on:
   push:
     branches:
@@ -13,6 +8,12 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
     strategy:
       matrix:
         project:
